@@ -1,0 +1,17 @@
+{
+  "name": "sistemasecurity",
+  "version": "1.0.0",
+  "description": "Sistema que mantiene seguro los datos de los usuarios",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Jonathan Ricardo Arias Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
