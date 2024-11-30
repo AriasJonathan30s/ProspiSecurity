@@ -1,5 +1,4 @@
 @echo off
 TITLE Prospi Security
-
-npm test
+start /min "" cmd /k npm test
 exit
