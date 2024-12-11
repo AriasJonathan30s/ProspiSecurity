@@ -2,6 +2,17 @@ const enco = require('./encode');
 const deco = require('./decode');
 
 module.exports = {
+    decodeTok: (phrase, tkn)=>{
+        return new Promise((resolve, reject) => {
+            const acc = deco.token(phrase, deco.clnTk(tkn))
+            if (acc) {
+                resolve(JSON.stringify(acc));
+            } else {
+                console.warn('Decode token request error '+e);
+                reject(0);
+            }
+        })
+    },
     encodeTok: (tkn, acc)=>{
         return new Promise((resolve, reject) => {
             const account = JSON.parse(acc);
