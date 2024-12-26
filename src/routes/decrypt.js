@@ -13,10 +13,10 @@ router.get('/token',(req,res)=>{
         })
         .catch(e=>{
             if (typeof(e) === 'number') {
-                console.warn('Login request error '+ e);
+                console.warn('Token request error '+ e);
                 res.status(501).json({ mensaje: consts.errMssgs[e] });
             } else {
-                console.warn('Login request error '+ e);
+                console.warn('Token request error '+ e);
                 res.status(501).json({ mensaje: consts.errMssgs[0] });
             }
         })

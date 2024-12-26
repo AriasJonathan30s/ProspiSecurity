@@ -8,7 +8,7 @@ module.exports = {
             if (acc) {
                 resolve(JSON.stringify(acc));
             } else {
-                console.warn('Decode token request error '+e);
+                console.warn('Decode token request error');
                 reject(0);
             }
         })
