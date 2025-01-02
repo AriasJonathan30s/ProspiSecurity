@@ -48,7 +48,7 @@ module.exports = {
             if (reqPass == pwds.fndPass) {
                 resolve(1);
             } else {
-                reject(0);
+                reject(1);
             }    
         })
     }
